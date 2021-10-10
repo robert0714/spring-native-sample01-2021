@@ -19,9 +19,12 @@ This option is compelling and allows one to create native images out of nearly e
 None of these items are complicated, but the process is time-consuming and error-prone. It can be automated, but there’s always a risk that a specific release forgets to test a particular use-case and crashes when deployed.
 
 ### Spring Native
-##### reference 
-*  https://iter01.com/592519.html
-*  https://blog.frankel.ch/kick-spring-native-tires/
+##### reference
+*  https://www.baeldung.com/spring-native-intro   [sample code](https://github.com/eugenp/tutorials/tree/master/spring-native)
+*  https://blog.frankel.ch/kick-spring-native-tires/   [sample code](https://github.com/hazelcast-demos/imperative-to-reactive)
+*  https://iter01.com/592519.html  [sample code](https://github.com/hazelcast-demos/imperative-to-reactive)
+*  https://2much2learn.com/crud-reactive-rest-api-using-spring-boot-r2dbc-graalvm-native/   [sample code](https://github.com/2much2learn/article-sep13-native-reactive-crud-rest-api-using-spring-boot-spring-r2dbc)
+
 #### Build and Run Image
 Using Docker Machine.
 ```bash
@@ -258,7 +261,7 @@ The output returns the expected result:
 We need to configure the Sort class to work with the root '/' endpoint, which retrieves all entities at once.
 
 
-[sample code](https://github.com/hazelcast-demos/imperative-to-reactive)
+
 ####  Export the image
 ```bash
 $ docker image save   reactive-to-native:0.0.1-SNAPSHOT  -o rtn.tar
