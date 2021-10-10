@@ -64,7 +64,7 @@ $ mvn  clean spring-boot:build-image  -Dmaven.test.skip=true
 [INFO] ------------------------------------------------------------------------
 
 ```
-The Maven command should create a native image of our Spring Boot App with the name pdc-check:1.0.2-SNAPSHOT .
+The Maven command should create a native image of our Spring Boot App with the name reactive-to-native:0.0.1-SNAPSHOT .
 
 ```bash
 $ docker images
