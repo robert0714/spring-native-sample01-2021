@@ -280,3 +280,9 @@ The Maven command will create the baeldung-spring-native executor file in the ta
 $ target/baeldung-spring-native
 Hello World!, This is Baledung Spring Native Application
 ```
+
+# Known issues
+## Compatability 
+* Using org.springframework.boot:***spring-boot-starter-cache*** , you can notice native image could be generated, but the appliction will be failed while starting up due to spring bean failure to  generating  (because using  	***@Cacheable*** <org.springframework.cache.annotation.Cacheable>).
+
+* Using io.springfox:***springfox-boot-starter*** , you can notice native image could be generated, but the appliction will be failed while starting up due to spring bean failure to  generating  (because using  OrderAwarePluginRegistry  ).
